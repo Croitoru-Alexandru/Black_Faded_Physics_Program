@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala</title>
+    <link rel="stylesheet" href="static/style.css"/>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+        <p id="scurt_circuit">
+            <b>Intensitatea maxima</b><br>
+            Scurtcircuitul se poate produce doar daca nu avem o rezistenta
+            introdusa in circuit.<br>
+            Rezistenta nu lasa ca intensitatea curentului sa fie maxima,
+            daca am lasa un circuit<br> fara o rezistenta
+            atunci bateria se va strica.
+            Scurtcircuitul este fenomenul<br> in care curentul electric iese si
+            intra in circuit cu intensitatea electrica maxima<br><br>
+            E = Tensiunea electromotoare ( sursa);<br>
+            r = Rezistenta interna a sursei;
+        </p>
+        <img id="scurt_poza" src="static/scurt.jpg"/>
+        <form id="scurt_circuit_intensitate" action="#" method="post">
+            <input type="text" id="4" class="calc_int_scurt" name="sursa"
+                   placeholder="Tensiunea electromotoare / V" required
+                   onkeyup="numere(this)" value="0"/><br><br>
+            <input type="text" name="rezistenta_interna"
+                   id="5" class="calc_int_scurt"
+                   placeholder="Rezistenta interna / Ω" required
+                   onkeyup="numere(this)" value="1"/><br><br>
+            <input type="submit" class="buton_calc_scurt" value="Calculare"/>
+        </form>
+        <p id="rezultatul_scurt">Rezultatul intensitatii este: {{inten}}</p>
+    {% endblock content %}
+</body>
+</html>

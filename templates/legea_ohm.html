@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala</title>
+    <link rel="stylesheet" href="static/style.css"/>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+
+    <p id="text_legea_ohm">
+        <b>Ce este legea lui Ohm?</b><br>
+        Legea lui Ohm este o metoda foarte simpla prin care putem afla
+        intensitatea curentului electric ce trece printr-un circuit.<br>
+        Ce este intensitatea? Intensitatea este acel curent ce trece prin firele din casele noastre si ne aduce lumina din becuri.<br>
+        Este o lege grea? Nu, chiar este cea mai simpla lege si toata lumea o poate intelege.
+    </p>
+    <img id="schema" src="static/schema.jpg"/>
+    <form>
+        <button id="buton_bec" type="button"
+                onfocus="aprindere()"
+                onblur="stingere()">x</button>
+    </form>
+    <div id="cerc"></div>
+    <div class="calculare_ohm">
+        <a class="link_calcul_ohm" href="/calcul_ohm">
+            Link - Calcularea intensitatii prin legea lui Ohm
+        </a><br>
+        <a class="link_calcul_ohm" href="/calcul_intensitate">
+            Link - Calcularea intensitatii maxime
+        </a>
+    </div>
+    {% endblock content %}
+</body>
+</html>

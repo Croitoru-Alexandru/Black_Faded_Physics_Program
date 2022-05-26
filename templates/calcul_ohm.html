@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala</title>
+    <link rel="stylesheet" href="static/style.css"/>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+        <p id="Legea_lui_Ohm">
+            <b>Legea lui Ohm</b><br>
+            In schema noastra de circuit nu se pune problema<br>
+            unui scurt deoarece avem un bec. Becul functioneaza ca un
+            rezistor<br>
+            al circuitului care are si proprietatea de a se aprinde,<br>
+            adica ne arata daca circuitul chiar functioneaza sau nu.<br><br>
+            E = Tensiunea electromotoare ( sursa);<br><br>
+            R = Rezistenta externa;<br><br>
+            r = Rezistenta interna a sursei;
+        </p>
+        <img id="formula_ohm_poza" src="static/lege_ohm.jpg"/>
+        <img id="formula_ohm_poza_i" src="static/lege_ohm_i.png"/>
+        <form id="intensitatea_ohm" action="#" method="post">
+            <input type="text" name="sursa_ohm" id="6" class="calc_int_ohm"
+                   placeholder="Tensiunea electromotoare / V" required
+                   onkeyup="numere(this)" /><br><br>
+            <input type="text" name="rezistenta_ohm" id="7"
+                   class="calc_int_ohm"
+                   placeholder="Rezistenta externa / Ω" required
+                   onkeyup="numere(this)" /><br><br>
+            <input type="text" id="8" class="calc_int_ohm"
+                   name="rez_int_ohm"
+                   placeholder="Rezistenta interna / Ω" required
+                   onkeyup="numere(this)" /><br><br>
+            <input type="submit" class="buton_calc_scurt"
+                   value="Calculare"/>
+        </form>
+        <p id="rezultatul_ohm">
+            Rezultatul intensitatii este: {{inten_ohm}}
+        </p>
+    {% endblock content %}
+</body>
+</html>

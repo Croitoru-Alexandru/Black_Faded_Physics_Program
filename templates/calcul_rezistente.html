@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala</title>
+    <link rel="stylesheet" href="static/style.css"/>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <p id="text_material">
+      Acest calculator va rezulta rezistenta prin rezistivitatea electrica
+      a unui metal sau orice material care conduce curent electric.<br>
+      Rezistivitatea electrica este marimea ce caracterizeza comportarea
+      distincta a materialelor, sub actiunea unui curent electric.
+    </p>
+    <form id="rez" action="#" method="post">
+      <input type="text" id="1" class="calc_rez" name="rezistivitate"
+             placeholder="rezistivitate / Ω * m" required
+             onkeyup="numere(this)"/><br><br><br>
+      <input type="text" id="2" class="calc_rez" name="lungimea"
+             placeholder="lungimea materialului / m" required
+             onkeyup="numere(this)"/><br><br><br>
+      <input type="text" id="3" class="calc_rez" name="aria"
+             placeholder="aria materialului / m^2" required
+             onkeyup="numere(this)"/><br><br><br>
+        <input type="submit" id="buton_calc" value="Calculare"/>
+    </form>
+    <p id="rezultatul">Rezultatul rezistentei este: {{rezis}}</p>
+    <a href="https://ro.wikipedia.org/wiki/Rezistivitate_electric%C4%83"
+        target="_new" title="Rezistivitate - Link Wikipedia">
+        <img class="poza_material" src="static/rezistivitate.png"/>
+    </a>
+    <p id="text_poza_rezistivitate">
+        l = Lungimea materialului;<br>
+        A = Aria materialului;<br>
+        ρ = Rezistivitatea electrica a materialului;<br>
+        (este o proprietate a oricarui material)<br>
+        R = Rezistenta pe care o realizeaza materialul;
+    </p>
+    <img id="formula" src="static/formula.jpg"/>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala</title>
+    <link rel="stylesheet" href="static/style.css"/>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <table id="materiale" cellpadding="10" border="10">
+        <tr>
+            <td>Material</td>
+            <td>Descriere</td>
+            <td>Material</td>
+            <td>Descriere</td>
+        </tr>
+        <tr>
+
+            <td>
+                <a href="https://ro.wikipedia.org/wiki/Nichel"
+                   target="_blank"><img class="metale"
+                                        src="static/nichelina.jpg"
+                                        title="Nichel - Link Wikipedia"/>
+                </a>
+            </td>
+            <td>Nichelina este un metal răspândit în diverse produse
+                chimice și aliaje,
+                constituind circa 0,008 % din scoarța Pământului.<br>
+                Acest lucru face ca omul să fie încontinuu expus<br>
+                la acest metal. Nichelul este corodat de transpirație,<br>
+                salivă și alte lichide secretate de organism.<br>
+                Incidența alergiei la nichel în populația generală<br> este
+                de circa 30 %, cu o netă preponderență la femei.<br>
+                <b>Rezistivitate electrica: 3 * 10^(-8)</b>
+            </td>
+            <td>
+                <a href="https://ro.wikipedia.org/wiki/Aur"
+                   target="_blank"><img class="metale"
+                                        src="static/aur.jpg"
+                                        title="Aur - Link Wikipedia"/>
+                </a>
+            </td>
+            <td>Aurul este elementul chimic din tabelul periodic
+                care are simbolul Au și numărul atomic 79.
+                Se utilizează aliat cu cuprul<br> sau argintul,
+                pentru fabricarea<br>  de podoabe, obiecte de artă, monede etc.
+                <br>
+                Datorită proprietăților sale este considerat<br>
+                singura formă reală de bani.<br>
+                <b>Rezistivitate electrica: 1,92 * 10^(-8)</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://ro.wikipedia.org/wiki/Cupru"
+                   target="_blank"><img class="metale"
+                                        src="static/cupru.jpg"
+                                        title="Cupru - Link Wikipedia"/>
+                </a>
+            </td>
+            <td>Cuprul (numit și aramă) este un element din tabelul periodic
+                <br>
+                având simbolul Cu și numărul atomic 29. Acesta este un metal
+                <br>de culoare roșcată,
+                foarte bun conducător de electricitate și căldură. <br>
+                Cuprul a fost folosit de oameni din cele mai
+                vechi timpuri,<br>
+                arheologii descoperind obiecte din acest
+                metal <br>datând din 8700 î.Hr.<br>
+                <b>Rezistivitate electrica: 1,48 * 10^(-8)</b>
+                </td>
+            <td>
+                <a href="https://ro.wikipedia.org/wiki/Fier"
+                    target="_blank"><img class="metale"
+                    src="static/fier.jpg"
+                    title="Fier - Link Wikipedia"/>
+                </a>
+            </td>
+            <td>Fierul este un element chimic metalic, notat cu simbolul Fe.
+                <br>
+                Este elementul chimic cel mai întâlnit pe Terra.
+                Este produs <br>în cantitate mare ca rezultat
+                de fuziune în stelele cu masă mare,<br> unde producerea de
+                nichel-56 este ultima reacție fuziune nucleară<br>
+                ce este exotermă, devenind ultimul element care se produce
+                <br>
+                înaintea stingerii unei supernove ce duce la reacții<br>
+                ce împrăștie precursorii radionuclizilor
+                fierului în spațiu.<br>
+                <b>Rezistivitate electrica: 8,59 * 10^(-8)</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://ro.wikipedia.org/wiki/Platin%C4%83"
+                   target="_blank"><img class="metale"
+                                        src="static/platina.jpg"
+                                        title="Platina - Link Wikipedia"/>
+                </a>
+            </td>
+            <td>Platina este un element ce face parte din grupa metalelor
+                <br>platinice împreună cu paladiu (unul din cele mai scumpe
+                <br>metale, fiind de aproximativ 1,5 ori mai scump
+                decât aurul).<br>
+                Este un metal tranzițional, dur,
+                maleabil,<br> ductil și prețios, de culoare gri-alb.<br>
+                <b>Rezistivitate electrica: 9,83 * 10^(-8)</b>
+            </td>
+            <td><a href="https://ro.wikipedia.org/wiki/Wolfram"
+                   target="_blank"><img class="metale"
+                                        src="static/wolfram.jpg"
+                                        title="Wolfram - Link Wikipedia"/>
+                </a></td>
+            <td>Wolframul (numit și tungsten) este un element chimic<br>
+                din grupa metalelor situat în poziția 74 în tabelul periodic
+                <br>
+                al elementelor. Simbolul chimic este "W". Wolframul este<br>
+                un metal cu luciu alb-argintiu,
+                ce cristalizează în sistemul<br>
+                cubic cu volum centrat fără a mai avea și alte forme
+                alotropice.<br> Foarte dur,
+                wolframul nu este casant ci devine
+                ductil în stare pură păstrându-și
+                în același timp rezistența.<br>
+                <b>Rezistivitate electrica: 5,02 * 10^(-8)</b>
+            </td>
+        </tr>
+    </table>
+    {% endblock content %}
+</body>
+</html>
