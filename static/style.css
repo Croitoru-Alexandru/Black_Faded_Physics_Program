@@ -182,10 +182,10 @@ tr{
 }
 
 #scurt_circuit{
-    transform: translate(480px, -300px);
+    transform: translate(0px, 80px);
     text-align: center;
     font-family: Arial;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 #Legea_lui_Ohm{
@@ -196,9 +196,10 @@ tr{
 }
 
 #scurt_poza{
-    transform: translate(1200px, -450px);
+    transform: translate(280px, 75px);
     opacity: 0.8;
     height: 80px;
+    border-radius: 20%;
 }
 
 .calc_int_scurt{
@@ -208,14 +209,14 @@ tr{
     border-radius: 10px;
     border: 2px solid #6267f5;
     text-align: center;
-    transform: translate(1000px, -440px);
+    transform: translate(520px, -10px);
 }
 
 #rezultatul_scurt{
     text-align: center;
     font-family: Brush Script MT;
     font-size: 24px;
-    transform: translate(490px, -450px);
+    transform: translate(-10px, -15px);
 }
 .calc_int_ohm{
     width: 30%;
@@ -227,7 +228,7 @@ tr{
     transform: translate(520px, -50px);
 }
 
-.buton_calc_scurt{
+.buton_calc_intens{
     width: 15%;
     padding: 0.2%;
     border-radius: 10px;
@@ -237,6 +238,18 @@ tr{
     border: 2px solid #6267f5;
     transform: translate(640px, -50px);
 }
+
+#buton_calc_scurt{
+    width: 15%;
+    padding: 0.2%;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#f54242,#42f5c5);
+    font-family: Brush Script MT;
+    font-size: 20px;
+    border: 2px solid #6267f5;
+    transform: translate(640px, 0px);
+}
+
 
 #formula_ohm_poza{
     transform: translate(1200px, -100px);
@@ -269,4 +282,128 @@ tr{
     font-size: 32px;
     text-decoration: none;
     color: black;
+}
+
+#miscare_rezistenta_serie{
+    text-align: center;
+    transform: translateY(15px);
+    background-color: #fff;
+}
+
+#text_rezistenta_serie{
+    font-family: Brush Script MT;
+    font-size: 24px;
+}
+
+#miscare_formula_serie{
+    transform:translate(150px, -25px);
+}
+
+#fomula_serie{
+    border-radius: 35%;
+    opacity: 0.8;
+    height: 80px;
+}
+
+#miscare_poza_serie{
+    transform:translate(1100px, -170px);
+}
+
+#poza_serie{
+    height: 200px;
+    border-radius: 15%;
+    opacity: 0.9;
+}
+
+#miscare_input_serie{
+    text-align: center;
+    transform: translateY(50px);
+}
+
+.input_rezistenta_serie{
+    width: 30%;
+    padding:0.5%;
+    background: linear-gradient(90deg,#80f2c1,#62f5f2);
+    border-radius: 10px;
+    border: 2px solid #6267f5;
+    text-align: center;
+}
+
+#buton_calculare_rezistenta_serie{
+    width: 15%;
+    padding: 0.2%;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#f54242,#42f5c5);
+    font-family: Brush Script MT;
+    font-size: 20px;
+    border: 2px solid #6267f5;
+}
+
+#rezultat_serie{
+    text-align: center;
+    transform: translate(-20px, 0px);
+    font-family: Brush Script MT;
+    font-size: 24px;
+}
+
+#miscare_rezistenta_paralel{
+    text-align: center;
+    transform: translateY(22px);
+    background-color: #fff;
+}
+
+#text_rezistenta_paralel{
+    font-family: Brush Script MT;
+    font-size: 24px;
+}
+
+#miscare_input_paralel{
+    text-align: center;
+    transform: translateY(120px);
+}
+
+.input_rezistenta_paralel{
+    width: 30%;
+    padding:0.5%;
+    background: linear-gradient(90deg,#80f2c1,#62f5f2);
+    border-radius: 10px;
+    border: 2px solid #6267f5;
+    text-align: center;
+}
+
+#buton_calculare_rezistenta_paralel{
+    width: 15%;
+    padding: 0.2%;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#f54242,#42f5c5);
+    font-family: Brush Script MT;
+    font-size: 20px;
+    border: 2px solid #6267f5;
+}
+
+#rezultat_paralel{
+    text-align: center;
+    transform: translate(-20px, 0px);
+    font-family: Brush Script MT;
+    font-size: 24px;
+}
+
+#miscare_formula_paralel{
+    transform:translate(120px, -25px);
+}
+
+#miscare_poza_paralel{
+    transform:translate(1100px, -200px);
+}
+
+#fomula_paralel{
+    border-radius: 35%;
+    opacity: 0.8;
+    height: 100px;
+}
+
+#poza_paralel{
+    height: 200px;
+    border-radius: 15%;
+    opacity: 0.9;
 }

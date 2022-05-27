@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala</title>
+    <link rel="stylesheet" href="static/style.css"/>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div id="miscare_rezistenta_serie">
+        <p id="text_rezistenta_serie">
+            <b>Rezistoarele serie</b><br>
+            Ce sunt rezistoarele? - Mai exact, rezistorul este o componenta
+            ce ofera unui circuit o rezistenta electrica.<br> De ce avem
+            nevoie de ele? - Avem novoie de asemenea obiecte pentru a nu lasa
+            circuitul sa se supraincalzeasca si sa se strice bateria sau
+            intreg circuitul.<br> Ce sunt rezistoarele in serie? - Este o
+            metoda de conectare a mai multor rezistoare pentru a avea o
+            intensitate electrica cat mai mica in circuit.
+        </p>
+    </div>
+    <div id="miscare_input_serie">
+        <form action="#" method="post">
+            <input type="text" class="input_rezistenta_serie"
+                   name="input_rezistenta_serie"
+                   placeholder="Introducere rezistente (dupa ',') Ω"
+                   required onkeyup="numere_cu_virgula(this)"
+            /><br><br>
+            <input type="submit" id="buton_calculare_rezistenta_serie"
+                   value="Calculare"
+            />
+        </form>
+        <p id="rezultat_serie">Rezultatul rezistentei totale este: {{r}}</p>
+    </div>
+    <div id="miscare_formula_serie">
+        <img id="fomula_serie" src="static/formula_serie.png"/>
+    </div>
+    <div id="miscare_poza_serie">
+        <img id="poza_serie" src="static/rezistenta_serie.jpg"/>
+    </div>
+    {% endblock content %}
+</body>
+</html>

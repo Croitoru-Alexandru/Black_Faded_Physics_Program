@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principala</title>
+    <link rel="stylesheet" href="static/style.css"/>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div id="miscare_rezistenta_paralel">
+        <p id="text_rezistenta_paralel">
+            <b>Rezistoarele serie</b><br>
+            Ce sunt rezistoarele? - Mai exact, rezistorul este o componenta
+            ce ofera unui circuit o rezistenta electrica.<br> De ce avem
+            nevoie de ele? - Avem novoie de asemenea obiecte pentru a nu lasa
+            circuitul sa se supraincalzeasca si sa se strice bateria sau
+            intreg circuitul.<br> Ce sunt rezistoarele in paralel? - Este o
+            metoda de conectare a mai multor rezistoare pentru a avea o
+            intensitate electrica divizata pe mai multe portiuni de circuit.
+        </p>
+    </div>
+    <div id="miscare_input_paralel">
+        <form action="#" method="post">
+            <input type="text" class="input_rezistenta_serie"
+                   name="input_rezistenta_paralel"
+                   placeholder="Introducere rezistente (dupa ',') Ω"
+                   required onkeyup="numere_cu_virgula(this)"
+            /><br><br>
+            <input type="submit" id="buton_calculare_rezistenta_paralel"
+                   value="Calculare"
+            />
+        </form>
+        <p id="rezultat_paralel">
+            Rezultatul rezistentei totale este: {{c}}
+        </p>
+    </div>
+    <div id="miscare_formula_paralel">
+        <img id="fomula_paralel"
+             src="static/poza_formula_rezist_paralel.png"/>
+    </div>
+    <div id="miscare_poza_paralel">
+        <img id="poza_paralel" src="static/rezistenta_paralel.jpg"/>
+    </div>
+    {% endblock content %}
+</body>
+</html>
